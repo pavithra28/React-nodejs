@@ -1,0 +1,21 @@
+/* Add this CSS to your stylesheets */
+@keyframes flightAnimation {
+    0% {
+      transform: translateX(0) translateY(0);
+    }
+    50% {
+      transform: translateX(180px) translateY(-50px); /* Adjust the distance and direction of the circular motion */
+    }
+    75%{
+        transform: translateX(180px) translateY(50px);  
+    }
+    100% {
+      transform: translateX(0) translateY(0);
+    }
+  }
+  
+  .flight-icon-container {
+    display: inline-block;
+    animation: flightAnimation 5s infinite; /* Adjust the duration of the animation */
+  }
+  
